@@ -8,18 +8,19 @@ app.get("/", function(req, res){
 
 app.get("/speak/:animal", function(req, res){
     // any animal
-    if(req.params.animal == "cow"){
-        res.send("Moo!");
-    } else if(req.params.animal == "dog"){
-        res.send("Woof!");
-    } else if(req.params.animal == "cat"){
-        res.send("Meow!");
-    } else if(req.params.animal == "fox"){
-        res.send("What does the Fox say?");
-    } else if(req.params.animal == "bug"){
-        res.send("No bugs, please");
-    } else{
+    var animal = req.params.animal
+    var sounds = {
+        cow: "Moo!",
+        dog: "Woof!",
+        cat: "Meow!",
+        fox: "What does the Fox say?",
+        bug: "No bugs, please."
+    }
+
+    if(sounds[animal] == undefined){
         res.send("Who is it?");
+    } else{
+        res.send(sounds[animal]);
     }
 });
 
