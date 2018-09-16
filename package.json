@@ -1,0 +1,29 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "A minimal example of Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maleskena/express-min-example.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "html",
+    "css",
+    "express"
+  ],
+  "author": "Alexandre Nunes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maleskena/express-min-example/issues"
+  },
+  "homepage": "https://github.com/maleskena/express-min-example#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
